@@ -17,6 +17,9 @@ void loop() {
     i = 0;
   }
   if(i < amount) {
+    if(i >= 10) {
+      
+    }
     if(i >= 5) {
       strip.setPixelColor((i-5), 0, 0, 0);
       strip.show();
@@ -24,5 +27,6 @@ void loop() {
     strip.setPixelColor(i, 255, 0, 0);
     strip.show();
     i++;
+    delay(10);
   }
 }
